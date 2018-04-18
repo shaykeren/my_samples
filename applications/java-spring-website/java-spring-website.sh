@@ -32,7 +32,7 @@ echo "Get the web application from github"
 echo "****************************************************************"
 mkdir /home/artifacts
 cd /home/artifacts
-git clone https://github.com/QualiNext/colony-java-spring-sample.git
+git clone https://github.com/cloudshell-colony/sample_java_spring_source.git
 
 
 echo "****************************************************************"
@@ -54,7 +54,7 @@ echo "****************************************************************"
 rm -rf /var/lib/tomcat8/webapps/ROOT
 
 # deploy the application as the ROOT web application
-cp colony-java-spring-sample/artifacts/colony-java-spring-sample-1.0.0-BUILD-SNAPSHOT.war /var/lib/tomcat8/webapps/ROOT.war
+cp sample_java_spring_source/artifacts/colony-java-spring-sample-1.0.0-BUILD-SNAPSHOT.war /var/lib/tomcat8/webapps/ROOT.war
 
 
 systemctl start tomcat8
